@@ -1,0 +1,24 @@
+# Local credentials and environment configuration
+.env
+.env.*
+!.env.example
+
+# Private uploads and generated runtime logs
+/storage/
+/public/_e.log
+/public/uploads/avatars/*
+/public/uploads/kyc/*
+/public/uploads/proofs/*
+!/public/uploads/avatars/.htaccess
+!/public/uploads/kyc/.htaccess
+!/public/uploads/proofs/.htaccess
+
+# Local database dumps/seeds may contain customer and account information
+/database/fixmate_complete_setup.sql
+/database/seeds.sql
+
+# Common generated dependencies and operating-system files
+/vendor/
+/node_modules/
+.DS_Store
+Thumbs.db
